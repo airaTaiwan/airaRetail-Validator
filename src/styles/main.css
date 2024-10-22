@@ -9,3 +9,32 @@ body,
 html.dark {
   background: #121212;
 }
+
+#main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "settings inference other"
+    "source inference ."
+    "source . ."
+    ". video video"
+    ". video video";
+  gap: 1rem;
+}
+
+.settings-area {
+  grid-area: settings;
+}
+
+.video-area {
+  grid-area: video;
+}
+
+.inference-area {
+  grid-area: inference;
+}
+
+.source-area {
+  grid-area: source;
+}
