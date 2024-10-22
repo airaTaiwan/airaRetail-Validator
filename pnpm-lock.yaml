@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@airataiwan/editor':
+        specifier: 0.0.1-beta.14
+        version: 0.0.1-beta.14(vue@3.5.3(typescript@5.5.4))
+      '@airataiwan/utils':
+        specifier: 0.0.1-beta.14
+        version: 0.0.1-beta.14(vue@3.5.3(typescript@5.5.4))
       '@vueuse/core':
         specifier: ^11.0.3
         version: 11.0.3(vue@3.5.3(typescript@5.5.4))
@@ -90,6 +96,9 @@ importers:
       vitest:
         specifier: ^2.0.5
         version: 2.0.5(@types/node@22.5.4)(jsdom@25.0.0)
+      vue-component-type-helpers:
+        specifier: ^2.1.6
+        version: 2.1.6
       vue-tsc:
         specifier: ^2.1.6
         version: 2.1.6(typescript@5.5.4)
@@ -99,6 +108,16 @@ packages:
   '@aashutoshrathi/word-wrap@1.2.6':
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
     engines: {node: '>=0.10.0'}
+
+  '@airataiwan/editor@0.0.1-beta.14':
+    resolution: {integrity: sha512-Bnwaj38btQna2TR839L+D8PwRv+sFB60/tCl4TK3omiETDD0nDzUzAIfwOFnv4hMYBCjRw/fVNIgsnaYqnwKeA==, tarball: https://npm.pkg.github.com/download/@airataiwan/editor/0.0.1-beta.14/23be9d76d139e4fbba1c1fbdf4ac6709969e4a5b}
+    peerDependencies:
+      vue: ^3.3.0
+
+  '@airataiwan/utils@0.0.1-beta.14':
+    resolution: {integrity: sha512-btvna58+LyWov8i/Cku+T+EKhLzykKRXsm3FmKBj7c4BmLsvn5+anxUKe3TRUG5shKspYF1FWAux4jPHiz2bpg==, tarball: https://npm.pkg.github.com/download/@airataiwan/utils/0.0.1-beta.14/39803b1c61bf53fbf1d01b47744cb02b35d64ee0}
+    peerDependencies:
+      vue: ^3.3.0
 
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
@@ -872,8 +891,8 @@ packages:
   '@vitest/eslint-plugin@1.1.0':
     resolution: {integrity: sha512-Ur80Y27Wbw8gFHJ3cv6vypcjXmrx6QHfw+q435h6Q2L+tf+h4Xf5pJTCL4YU/Jps9EVeggQxS85OcUZU7sdXRw==}
     peerDependencies:
-      '@typescript-eslint/utils': ^8.3.0
-      eslint: ^9.9.1
+      '@typescript-eslint/utils': '>= 8.0'
+      eslint: '>= 8.57.0'
       typescript: '>= 5.0.0'
       vitest: '*'
     peerDependenciesMeta:
@@ -1515,7 +1534,7 @@ packages:
   eslint-config-flat-gitignore@0.3.0:
     resolution: {integrity: sha512-0Ndxo4qGhcewjTzw52TK06Mc00aDtHNTdeeW2JfONgDcLkRO/n/BteMRzNVpLQYxdCC/dFEilfM9fjjpGIJ9Og==}
     peerDependencies:
-      eslint: ^9.9.1
+      eslint: ^9.5.0
 
   eslint-flat-config-utils@0.3.1:
     resolution: {integrity: sha512-eFT3EaoJN1hlN97xw4FIEX//h0TiFUobgl2l5uLkIwhVN9ahGq95Pbs+i1/B5UACA78LO3rco3JzuvxLdTUOPA==}
@@ -1596,7 +1615,7 @@ packages:
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       astro-eslint-parser: ^1.0.2
-      eslint: ^9.9.1
+      eslint: '>=8.0.0'
       svelte: '>=3.0.0'
       svelte-eslint-parser: ^0.41.0
       vue-eslint-parser: '>=9.0.0'
@@ -3053,8 +3072,8 @@ packages:
   vscode-uri@3.0.8:
     resolution: {integrity: sha512-AyFQ0EVmsOZOlAnxoFOGOq1SQDWAB7C6aqMGS23svWAllfOaxbuFvcT8D1i8z3Gyn8fraVeZNNmN6e9bxxXkKw==}
 
-  vue-component-type-helpers@2.0.13:
-    resolution: {integrity: sha512-xNO5B7DstNWETnoYflLkVgh8dK8h2ZDgxY1M2O0zrqGeBNq5yAZ8a10yCS9+HnixouNGYNX+ggU9MQQq86HTpg==}
+  vue-component-type-helpers@2.1.6:
+    resolution: {integrity: sha512-ng11B8B/ZADUMMOsRbqv0arc442q7lifSubD0v8oDXIFoMg/mXwAPUunrroIDkY+mcD0dHKccdaznSVp8EoX3w==}
 
   vue-demi@0.14.10:
     resolution: {integrity: sha512-nMZBOwuzabUO0nLgIcc6rycZEebF6eeUfaiQx9+WSk8e29IbLvPU9feI6tqW4kTo3hvoYAJkMh8n8D0fuISphg==}
@@ -3201,6 +3220,19 @@ packages:
 snapshots:
 
   '@aashutoshrathi/word-wrap@1.2.6': {}
+
+  '@airataiwan/editor@0.0.1-beta.14(vue@3.5.3(typescript@5.5.4))':
+    dependencies:
+      '@airataiwan/utils': 0.0.1-beta.14(vue@3.5.3(typescript@5.5.4))
+      '@vueuse/core': 11.0.3(vue@3.5.3(typescript@5.5.4))
+      '@vueuse/shared': 11.0.3(vue@3.5.3(typescript@5.5.4))
+      vue: 3.5.3(typescript@5.5.4)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+
+  '@airataiwan/utils@0.0.1-beta.14(vue@3.5.3(typescript@5.5.4))':
+    dependencies:
+      vue: 3.5.3(typescript@5.5.4)
 
   '@ampproject/remapping@2.3.0':
     dependencies:
@@ -4490,7 +4522,7 @@ snapshots:
   '@vue/test-utils@2.4.6':
     dependencies:
       js-beautify: 1.14.9
-      vue-component-type-helpers: 2.0.13
+      vue-component-type-helpers: 2.1.6
 
   '@vueuse/core@11.0.3(vue@3.5.3(typescript@5.5.4))':
     dependencies:
@@ -6593,7 +6625,7 @@ snapshots:
 
   vscode-uri@3.0.8: {}
 
-  vue-component-type-helpers@2.0.13: {}
+  vue-component-type-helpers@2.1.6: {}
 
   vue-demi@0.14.10(vue@3.5.3(typescript@5.5.4)):
     dependencies:

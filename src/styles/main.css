@@ -17,9 +17,9 @@ html.dark {
   grid-template-areas:
     "settings inference other"
     "source inference ."
-    "source . ."
-    ". video video"
-    ". video video";
+    "source view view"
+    ". view view"
+    ". view view";
   gap: 1rem;
 }
 
@@ -27,8 +27,8 @@ html.dark {
   grid-area: settings;
 }
 
-.video-area {
-  grid-area: video;
+.view-area {
+  grid-area: view;
 }
 
 .inference-area {

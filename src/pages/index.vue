@@ -8,4 +8,5 @@ defineOptions({
   <LiveVideoSettings />
   <VideoSource />
   <InferenceProfile />
+  <ViewInterface />
 </template>

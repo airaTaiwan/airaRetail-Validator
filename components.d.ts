@@ -19,6 +19,8 @@ declare module 'vue' {
     TheFooter: typeof import('./src/components/TheFooter.vue')['default']
     TheHeader: typeof import('./src/components/TheHeader.vue')['default']
     TheInput: typeof import('./src/components/TheInput.vue')['default']
+    Video: typeof import('./src/components/Video.vue')['default']
     VideoSource: typeof import('./src/components/VideoSource.vue')['default']
+    ViewInterface: typeof import('./src/components/ViewInterface.vue')['default']
   }
 }
