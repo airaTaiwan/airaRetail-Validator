@@ -13,9 +13,11 @@ declare module 'vue' {
     LiveVideoSettings: typeof import('./src/components/LiveVideoSettings.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SimpleButton: typeof import('./src/components/SimpleButton.vue')['default']
     TextInput: typeof import('./src/atomic/TextInput.vue')['default']
     TheFooter: typeof import('./src/components/TheFooter.vue')['default']
     TheHeader: typeof import('./src/components/TheHeader.vue')['default']
+    ToggleButton: typeof import('./src/components/ToggleButton.vue')['default']
     VideoSource: typeof import('./src/components/VideoSource.vue')['default']
     ViewInterface: typeof import('./src/components/ViewInterface.vue')['default']
   }

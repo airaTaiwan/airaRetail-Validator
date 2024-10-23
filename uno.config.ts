@@ -17,7 +17,7 @@ export default defineConfig({
       'bg-secondary': 'bg-[#8881]',
       'bg-hover': 'bg-[#8882]',
       'color-base': 'text-#222 dark:text-#ddd',
-      'border-base': 'border-gray:20',
+      'border-base': 'dark:border-gray:20 border-gray:80',
 
       'box-input': 'box-input-shell box-input-inner focus:(border-primary ring-2 ring-primary:20)',
       'box-input-shell': 'bg-base color-base border-base border rounded-lg focus-within:(border-primary ring-2 ring-primary:20) disabled:(bg-gray:10 color-gray:50)',

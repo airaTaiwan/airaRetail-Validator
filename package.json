@@ -17,12 +17,14 @@
     "@airataiwan/editor": "0.0.1-beta.14",
     "@airataiwan/utils": "0.0.1-beta.14",
     "@vueuse/core": "^11.0.3",
+    "ky": "^1.7.2",
     "vue": "^3.5.3",
     "vue-router": "^4.4.3"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.4.0",
     "@iconify-json/carbon": "^1.2.1",
+    "@iconify-json/mingcute": "^1.2.1",
     "@types/node": "^22.5.4",
     "@unocss/eslint-config": "^0.62.3",
     "@unocss/eslint-plugin": "^0.62.3",
