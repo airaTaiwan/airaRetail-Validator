@@ -93,9 +93,6 @@ importers:
       vite:
         specifier: ^5.4.3
         version: 5.4.3(@types/node@22.5.4)
-      vitest:
-        specifier: ^2.0.5
-        version: 2.0.5(@types/node@22.5.4)(jsdom@25.0.0)
       vue-component-type-helpers:
         specifier: ^2.1.6
         version: 2.1.6
@@ -4120,25 +4117,30 @@ snapshots:
       '@vitest/utils': 2.0.5
       chai: 5.1.1
       tinyrainbow: 1.2.0
+    optional: true
 
   '@vitest/pretty-format@2.0.5':
     dependencies:
       tinyrainbow: 1.2.0
+    optional: true
 
   '@vitest/runner@2.0.5':
     dependencies:
       '@vitest/utils': 2.0.5
       pathe: 1.1.2
+    optional: true
 
   '@vitest/snapshot@2.0.5':
     dependencies:
       '@vitest/pretty-format': 2.0.5
       magic-string: 0.30.11
       pathe: 1.1.2
+    optional: true
 
   '@vitest/spy@2.0.5':
     dependencies:
       tinyspy: 3.0.0
+    optional: true
 
   '@vitest/utils@2.0.5':
     dependencies:
@@ -4146,6 +4148,7 @@ snapshots:
       estree-walker: 3.0.3
       loupe: 3.1.1
       tinyrainbow: 1.2.0
+    optional: true
 
   '@volar/language-core@2.4.2':
     dependencies:
@@ -4596,7 +4599,8 @@ snapshots:
 
   argparse@2.0.1: {}
 
-  assertion-error@2.0.1: {}
+  assertion-error@2.0.1:
+    optional: true
 
   ast-kit@1.0.1:
     dependencies:
@@ -4671,6 +4675,7 @@ snapshots:
       deep-eql: 5.0.2
       loupe: 3.1.1
       pathval: 2.0.0
+    optional: true
 
   chalk@2.4.2:
     dependencies:
@@ -4691,7 +4696,8 @@ snapshots:
 
   character-reference-invalid@1.1.4: {}
 
-  check-error@2.1.1: {}
+  check-error@2.1.1:
+    optional: true
 
   chokidar@3.6.0:
     dependencies:
@@ -4809,7 +4815,8 @@ snapshots:
 
   decimal.js@10.4.3: {}
 
-  deep-eql@5.0.2: {}
+  deep-eql@5.0.2:
+    optional: true
 
   deep-is@0.1.4: {}
 
@@ -5303,7 +5310,8 @@ snapshots:
 
   get-east-asian-width@1.2.0: {}
 
-  get-func-name@2.0.2: {}
+  get-func-name@2.0.2:
+    optional: true
 
   get-stream@8.0.1: {}
 
@@ -5638,6 +5646,7 @@ snapshots:
   loupe@3.1.1:
     dependencies:
       get-func-name: 2.0.2
+    optional: true
 
   lru-cache@10.4.3: {}
 
@@ -5934,7 +5943,8 @@ snapshots:
 
   pathe@1.1.2: {}
 
-  pathval@2.0.0: {}
+  pathval@2.0.0:
+    optional: true
 
   perfect-debounce@1.0.0: {}
 
@@ -6107,7 +6117,8 @@ snapshots:
 
   shebang-regex@3.0.0: {}
 
-  siginfo@2.0.0: {}
+  siginfo@2.0.0:
+    optional: true
 
   signal-exit@4.1.0: {}
 
@@ -6177,9 +6188,11 @@ snapshots:
 
   stable-hash@0.0.4: {}
 
-  stackback@0.0.2: {}
+  stackback@0.0.2:
+    optional: true
 
-  std-env@3.7.0: {}
+  std-env@3.7.0:
+    optional: true
 
   string-argv@0.3.2: {}
 
@@ -6268,7 +6281,8 @@ snapshots:
 
   text-table@0.2.0: {}
 
-  tinybench@2.8.0: {}
+  tinybench@2.8.0:
+    optional: true
 
   tinyexec@0.3.0: {}
 
@@ -6277,11 +6291,14 @@ snapshots:
       fdir: 6.2.0(picomatch@4.0.2)
       picomatch: 4.0.2
 
-  tinypool@1.0.0: {}
+  tinypool@1.0.0:
+    optional: true
 
-  tinyrainbow@1.2.0: {}
+  tinyrainbow@1.2.0:
+    optional: true
 
-  tinyspy@3.0.0: {}
+  tinyspy@3.0.0:
+    optional: true
 
   to-fast-properties@2.0.0: {}
 
@@ -6579,6 +6596,7 @@ snapshots:
       - sugarss
       - supports-color
       - terser
+    optional: true
 
   vite@5.4.3(@types/node@22.5.4):
     dependencies:
@@ -6622,6 +6640,7 @@ snapshots:
       - sugarss
       - supports-color
       - terser
+    optional: true
 
   vscode-uri@3.0.8: {}
 
@@ -6696,6 +6715,7 @@ snapshots:
     dependencies:
       siginfo: 2.0.0
       stackback: 0.0.2
+    optional: true
 
   wrap-ansi@7.0.0:
     dependencies:

@@ -9,17 +9,13 @@ declare module 'vue' {
   export interface GlobalComponents {
     Box: typeof import('./src/components/Box.vue')['default']
     FileInput: typeof import('./src/atomic/FileInput.vue')['default']
-    Header: typeof import('./src/components/Header.vue')['default']
     InferenceProfile: typeof import('./src/components/InferenceProfile.vue')['default']
-    LiveVideo: typeof import('./src/components/LiveVideo.vue')['default']
     LiveVideoSettings: typeof import('./src/components/LiveVideoSettings.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TextInput: typeof import('./src/atomic/TextInput.vue')['default']
     TheFooter: typeof import('./src/components/TheFooter.vue')['default']
     TheHeader: typeof import('./src/components/TheHeader.vue')['default']
-    TheInput: typeof import('./src/components/TheInput.vue')['default']
-    Video: typeof import('./src/components/Video.vue')['default']
     VideoSource: typeof import('./src/components/VideoSource.vue')['default']
     ViewInterface: typeof import('./src/components/ViewInterface.vue')['default']
   }
