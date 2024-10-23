@@ -6,7 +6,7 @@ const { label } = defineProps<{
 async function onFileChange(e: Event) {
   const input = e.target as HTMLInputElement
   const files = input.files
-  console.log(files)
+  return files
 }
 </script>
 
