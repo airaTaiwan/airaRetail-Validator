@@ -1,5 +1,11 @@
 import type { SettingsFile } from '~/apis/settingsFile'
-import type { VideoSource } from '~/types/settings'
+import type { ImageObj, VideoSource } from '~/types/settings'
+
+export const imgObj = ref<ImageObj>({
+  width: 0,
+  height: 0,
+  imgSrc: '',
+})
 
 export const videoSource = ref<VideoSource>({
   fileType: 'file',
@@ -7,4 +13,4 @@ export const videoSource = ref<VideoSource>({
   fps: 25,
 })
 
-export const settingsFile = shallowRef<SettingsFile>()
+export const settingsFile = shallowRef<SettingsFile[]>()

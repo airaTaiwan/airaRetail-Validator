@@ -12,15 +12,15 @@ export interface SettingsFile {
   lineCount: number
   faceRatio: number
   lineRatio: number
-  timestamp: string
+  timestamp: number
 }
 
 export async function getSettingsFile() {
-  return ky.get<SettingsFile>('settingsFiles')
+  return ky.get<SettingsFile[]>('settingsFiles')
 }
 
-export async function insertSettingsFile(settings: string) {
+export async function insertSettingsFile(settings: SettingsFile) {
   return ky.post<SettingsFile>('settingsFiles', {
-    json: { settings },
+    json: { ...settings },
   })
 }

@@ -8,6 +8,9 @@ export interface InferenceProfile {
   objectDetectionThreshold: number
   facialRecognitionThreshold: number
   verificationLength: number
+  mergeFaceScore: number
+  faceAngleThreshold: number
+  minFaceSize: number
 }
 
 export type VideoSourceType = 'file' | 'rtsp'
@@ -27,4 +30,10 @@ export interface VideoSourceRTSPOptions {
   password: string
   url: string
   fps: number
+}
+
+export interface ImageObj {
+  width: number
+  height: number
+  imgSrc: string
 }

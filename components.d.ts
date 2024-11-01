@@ -11,6 +11,7 @@ declare module 'vue' {
     FileInput: typeof import('./src/atomic/FileInput.vue')['default']
     InferenceProfile: typeof import('./src/components/InferenceProfile.vue')['default']
     LiveVideoSettings: typeof import('./src/components/LiveVideoSettings.vue')['default']
+    ResultInterface: typeof import('./src/components/ResultInterface.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SimpleButton: typeof import('./src/components/SimpleButton.vue')['default']

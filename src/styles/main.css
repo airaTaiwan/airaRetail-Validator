@@ -12,14 +12,15 @@ html.dark {
 
 #main {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-    "settings inference other"
-    "source inference ."
-    "source view view"
-    ". view view"
-    ". view view";
+    'settings inference inference result'
+    'source inference inference result'
+    'source view view result'
+    'source view view result'
+    '. view view result'
+    '. view view result';
   gap: 1rem;
 }
 
@@ -37,4 +38,8 @@ html.dark {
 
 .source-area {
   grid-area: source;
+}
+
+.result-area {
+  grid-area: result;
 }

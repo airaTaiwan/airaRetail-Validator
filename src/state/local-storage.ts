@@ -17,6 +17,9 @@ export const inferenceProfile = useLocalStorage<InferenceProfile>(
     captureInterval: 1000,
     objectDetectionThreshold: 0.5,
     facialRecognitionThreshold: 0.5,
+    mergeFaceScore: 0.8,
+    faceAngleThreshold: 15,
+    minFaceSize: 50,
     verificationLength: 10,
   },
   {

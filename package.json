@@ -2,7 +2,7 @@
   "name": "aira-retail-validator",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.9.0",
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610",
   "description": "AIRA Retail Validator Tool",
   "scripts": {
     "build": "vite build",
@@ -10,13 +10,13 @@
     "lint": "eslint .",
     "typecheck": "vue-tsc --noEmit",
     "preview": "vite preview",
-    "up": "taze major -I",
-    "postinstall": "npx simple-git-hooks"
+    "up": "taze major -I"
   },
   "dependencies": {
     "@airataiwan/editor": "0.0.1-beta.14",
     "@airataiwan/utils": "0.0.1-beta.14",
     "@vueuse/core": "^11.0.3",
+    "dayjs": "1.11.13",
     "ky": "^1.7.2",
     "vue": "^3.5.3",
     "vue-router": "^4.4.3"
@@ -48,9 +48,6 @@
     "vite": "^5.4.3",
     "vue-component-type-helpers": "^2.1.6",
     "vue-tsc": "^2.1.6"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
     "*": "eslint --fix"

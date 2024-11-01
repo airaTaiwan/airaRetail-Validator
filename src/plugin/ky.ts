@@ -11,8 +11,10 @@ function createTypedKyInstance(options?: Options) {
   }
 }
 
+const host = process.env.NODE_ENV === 'development' ? VITE_API_BASE_URL : `http://${window.location.hostname}`
+
 const ky = createTypedKyInstance({
-  prefixUrl: `${VITE_API_BASE_URL}:${VITE_API_BASE_PORT}/${VITE_API_PREFIX}`,
+  prefixUrl: `${host}:${VITE_API_BASE_PORT}/${VITE_API_PREFIX}`,
   timeout: 20 * 60 * 1000,
 })
 
